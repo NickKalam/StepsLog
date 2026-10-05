@@ -40,7 +40,7 @@ import dev.nick.stepcounter.util.changeAppLanguage
 import dev.nick.stepcounter.util.hasRequiredPermissions
 
 private const val CSV_MIME_TYPE = "text/csv"
-private const val BACKUP_FILE_NAME = "\nCounter_backup.csv"
+private const val BACKUP_FILE_NAME = "stepslog_backup.csv"
 
 @Composable
 fun StepCounterRoute(
