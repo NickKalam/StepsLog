@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Screen nav tabs strings-->
+    <string name="tab_today">Oggi</string>
+    <string name="tab_history">Cronologia</string>
+    <!--Main screen strings-->
+    <string name="calories_format">Kcal: %.2f</string>
+    <string name="distance_meters_format">Metri: %.2f</string>
+    <string name="distance_km_format">KM: %.2f</string>
+    <string name="distance_km_floor_format">KM: %.0f</string>
+    <string name="out_of_goal_steps">/%d passi</string>
+    <string name="export_step_records">Esporta cronologia</string>
+    <string name="import_step_records">Importa cronologia</string>
+    <string name="more_options_content_desc">Altre opzioni</string>
+    <string name="overwrite_data_title">Sovrascrivere i dati esistenti?</string>
+    <string name="overwrite_data_text">L\'importazione dei dati eliminerà e sostituirà la cronologia dei passi attuale. Sei sicuro di voler procedere?</string>
+    <string name="import_button_text">Importa</string>
+
+    <!--History screen strings-->
+    <string name="history_title">Cronologia passi</string>
+    <string name="history_subtitle">La tua attività negli ultimi %d giorni</string>
+    <string name="history_steps_count">%1$s passi</string>
+    <string name="history_no_activity">Nessuna attività registrata</string>
+    <string name="step_progress_desc">Progresso dell\'obiettivo: %1$d su %2$d passi.</string>
+    <string name="menu_expanded_desc">Comprimi menu</string>
+    <string name="menu_collapsed_desc">Espandi menu</string>
+    <!-- Notification strings -->
+    <string name="notification_channel_name">Servizio tracciamento passi</string>
+    <string name="notification_channel_desc">Traccia attivamente i passi in background</string>
+    <string name="notification_title">%d passi</string>
+    <string name="notification_body">&#x1F525; %.2f kcal   &#x23F1;&#xFE0F; %d min   &#x1F6A9; %.1f km</string>
+
+    <string name="goal_reached_title">Obiettivo Raggiunto! &#x1F3C6;</string>
+    <string name="goal_reached_body">Hai appena superato i %d passi oggi!</string>
+
+    <string name="app_name">StepsLog</string>
+    <string name="user_steps">Passi di oggi</string>
+    <string name="enter_measurements">Inserisci misure</string>
+    <string name="save_button">Salva</string>
+    <string name="cancel_button">Annulla</string>
+    <string name="user_meters">Metri</string>
+    <string name="user_minutes">Minuti</string>
+    <string name="start_tracking">Avvia tracciamento</string>
+    <string name="update_user_data">Aggiorna dati utente</string>
+    <string name="user_height">Altezza (cm)</string>
+    <string name="user_weight">Peso (kg)</string>
+    <string name="user_gender">Sesso (Uomo o Donna)</string>
+    <string name="user_steps_goal">Obiettivo giornaliero</string>
+    <string name="language_selection">Lingua</string>
+    <string name="select_language_title">Seleziona lingua</string>
+    <!-- Form strings -->
+    <string name="height_placeholder">es. 173</string>
+    <string name="weight_placeholder">es. 80.5</string>
+    <string name="height_error">Inserisci un\'altezza valida (50–250)</string>
+    <string name="weight_error">Inserisci un peso valido (20.00–300.00 kg)</string>
+    <string name="age_error">Inserisci un\'età valida (8–120)</string>
+    <string name="gender_error">Seleziona un sesso valido (Uomo o Donna)</string>
+    <string name="daily_steps_goal_error">Inserisci un obiettivo valido (500–100000)</string>
+</resources>

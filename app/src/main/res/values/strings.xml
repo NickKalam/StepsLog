@@ -1,0 +1,59 @@
+<resources>
+
+    <!--Screen nav tabs strings-->
+    <string name="tab_today">Today</string>
+    <string name="tab_history">History</string>
+    <!--Main screen strings-->
+    <string name="calories_format">Kcal:%.2f</string>
+    <string name="distance_meters_format">Meters:%.2f </string>
+    <string name="distance_km_format">KM:%.2f</string>
+    <string name="distance_km_floor_format">KM: %.0f</string>
+    <string name="out_of_goal_steps">/%d steps</string>
+    <string name="export_step_records">Export step records</string>
+    <string name="import_step_records">Import step records</string>
+    <string name="more_options_content_desc">More options</string>
+    <string name="overwrite_data_title">Overwrite existing data?</string>
+    <string name="overwrite_data_text">Importing step records will delete and replace your current step history. Are you sure you want to proceed?</string>
+    <string name="import_button_text">Import</string>
+    <string name="language_selection">Language</string>
+    <string name="select_language_title">Select Language</string>
+    <!--History screen strings-->
+    <string name="history_title">Step history</string>
+    <string name="history_subtitle">Your activity over the last %d days</string>
+    <string name="history_steps_count">%1$s steps</string>
+    <string name="history_no_activity">No recorded activity</string>
+    <string name="step_progress_desc">Step goal progress: %1$d out of %2$d steps.</string>
+    <string name="menu_expanded_desc">Collapse menu</string>
+    <string name="menu_collapsed_desc">Expand menu</string>
+    <!-- Notification strings -->
+    <string name="notification_channel_name">Step Tracking Service</string>
+    <string name="notification_channel_desc">Actively tracks steps in the background</string>
+    <string name="notification_title"> %d steps</string>
+    <string name="notification_body">&#x1F525; %.2f kcal   &#x23F1;&#xFE0F; %d min   &#x1F6A9; %.1f km</string>
+
+    <string name="goal_reached_title">Goal Reached! &#x1F3C6;</string>
+    <string name="goal_reached_body">You just crossed %d steps today!</string>
+
+    <string name="app_name">StepsLog</string>
+    <string name="user_steps">Today\'s Steps</string>
+    <string name="enter_measurements">Enter Measurements</string>
+    <string name="save_button">Save</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="user_meters">Meters</string>
+    <string name="user_minutes">Minutes</string>
+    <string name="start_tracking">Start tracking</string>
+    <string name="update_user_data">Update user\'s data</string>
+    <string name="user_height">Height (cm)</string>
+    <string name="user_weight">Weight (kg)</string>
+    <string name="user_gender">Gender (Male or Female)</string>
+    <string name="user_steps_goal">Daily steps goal</string>
+
+    <!-- Form strings -->
+    <string name="height_placeholder">e.g 173</string>
+    <string name="weight_placeholder">e.g 80.5</string>
+    <string name="height_error">Please enter a valid height (50–250)</string>
+    <string name="weight_error">Please enter a valid weight (20.00–300.00 kg)</string>
+    <string name="age_error">Please enter a valid age (8–120)</string>
+    <string name="gender_error">Please enter a valid gender (Male or Female)</string>
+    <string name="daily_steps_goal_error">Please enter a valid daily steps goal(500–100000)</string>
+</resources>

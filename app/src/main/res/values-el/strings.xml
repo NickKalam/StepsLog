@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Screen nav tabs strings-->
+    <string name="tab_today">Σήμερα</string>
+    <string name="tab_history">Ιστορικό</string>
+
+    <!--Main screen strings-->
+    <string name="calories_format">Θερμίδες: %.2f</string>
+    <string name="distance_meters_format">Μέτρα: %.2f</string>
+    <string name="distance_km_format">ΧΛΜ: %.2f</string>
+    <string name="distance_km_floor_format">ΧΛΜ: %.0f</string>
+    <string name="out_of_goal_steps">/%d βήματα</string>
+    <string name="export_step_records">Εξαγωγή ιστορικού βημάτων</string>
+    <string name="import_step_records">Εισαγωγή ιστορικού βημάτων</string>
+    <string name="more_options_content_desc">Περισσότερες επιλογές</string>
+    <string name="overwrite_data_title">Αντικατάσταση υπαρχόντων δεδομένων;</string>
+    <string name="overwrite_data_text">Η εισαγωγή δεδομένων θα διαγράψει και θα αντικαταστήσει το τρέχον ιστορικό βημάτων σας. Είστε σίγουροι ότι θέλετε να συνεχίσετε;</string>
+    <string name="import_button_text">Εισαγωγή</string>
+
+    <!--History screen strings-->
+    <string name="history_title">Ιστορικό βημάτων</string>
+    <string name="history_subtitle">Η δραστηριότητά σας τις τελευταίες %d ημέρες</string>
+    <string name="history_steps_count">%1$s βήματα</string>
+    <string name="history_no_activity">Καμία καταγεγραμμένη δραστηριότητα</string>
+    <string name="step_progress_desc">Πρόοδος στόχου: %1$d από %2$d βήματα.</string>
+    <string name="menu_expanded_desc">Σύμπτυξη μενού</string>
+    <string name="menu_collapsed_desc">Ανάπτυξη μενού</string>
+
+    <!-- Notification strings -->
+    <string name="notification_channel_name">Υπηρεσία Καταγραφής Βημάτων</string>
+    <string name="notification_channel_desc">Ενεργή καταγραφή βημάτων στο παρασκήνιο</string>
+    <string name="notification_title">%d βήματα</string>
+    <string name="notification_body">&#x1F525; %.2f kcal   &#x23F1;&#xFE0F; %d λεπτά   &#x1F6A9; %.1f χλμ</string>
+
+    <string name="goal_reached_title">Ο Στόχος Επιτεύχθηκε! &#x1F3C6;</string>
+    <string name="goal_reached_body">Μόλις ξεπεράσατε τα %d βήματα σήμερα!</string>
+
+    <string name="app_name">StepsLog</string>
+    <string name="user_steps">Σημερινά Βήματα</string>
+    <string name="enter_measurements">Εισαγωγή Μετρήσεων</string>
+    <string name="save_button">Αποθήκευση</string>
+    <string name="cancel_button">Ακύρωση</string>
+    <string name="user_meters">Μέτρα</string>
+    <string name="user_minutes">Λεπτά</string>
+    <string name="start_tracking">Έναρξη καταγραφής</string>
+    <string name="update_user_data">Ενημέρωση δεδομένων χρήστη</string>
+    <string name="user_height">Ύψος (cm)</string>
+    <string name="user_weight">Βάρος (kg)</string>
+    <string name="user_gender">Φύλο (Άνδρας ή Γυναίκα)</string>
+    <string name="user_steps_goal">Ημερήσιος στόχος βημάτων</string>
+    <string name="language_selection">Γλώσσα</string>
+    <string name="select_language_title">Επιλογή Γλώσσας</string>
+    <!-- Form strings -->
+    <string name="height_placeholder">π.χ. 173</string>
+    <string name="weight_placeholder">π.χ. 80.5</string>
+    <string name="height_error">Παρακαλώ εισάγετε ένα έγκυρο ύψος (50–250)</string>
+    <string name="weight_error">Παρακαλώ εισάγετε ένα έγκυρο βάρος (20.00–300.00 kg)</string>
+    <string name="age_error">Παρακαλώ εισάγετε μια έγκυρη ηλικία (8–120)</string>
+    <string name="gender_error">Παρακαλώ επιλέξτε έγκυρο φύλο (Άνδρας ή Γυναίκα)</string>
+    <string name="daily_steps_goal_error">Παρακαλώ εισάγετε έναν έγκυρο στόχο (500–100000)</string>
+</resources>

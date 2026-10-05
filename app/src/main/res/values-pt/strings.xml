@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Screen nav tabs strings-->
+    <string name="tab_today">Hoje</string>
+    <string name="tab_history">Histórico</string>
+    <!--Main screen strings-->
+    <string name="calories_format">Kcal: %.2f</string>
+    <string name="distance_meters_format">Metros: %.2f</string>
+    <string name="distance_km_format">KM: %.2f</string>
+    <string name="distance_km_floor_format">KM: %.0f</string>
+    <string name="out_of_goal_steps">/%d passos</string>
+    <string name="export_step_records">Exportar histórico</string>
+    <string name="import_step_records">Importar histórico</string>
+    <string name="more_options_content_desc">Mais opções</string>
+    <string name="overwrite_data_title">Substituir dados existentes?</string>
+    <string name="overwrite_data_text">A importação de dados de passos excluirá e substituirá seu histórico atual. Tem certeza de que deseja continuar?</string>
+    <string name="import_button_text">Importar</string>
+
+    <!--History screen strings-->
+    <string name="history_title">Histórico de passos</string>
+    <string name="history_subtitle">Sua atividade nos últimos %d dias</string>
+    <string name="history_steps_count">%1$s passos</string>
+    <string name="history_no_activity">Nenhuma atividade registrada</string>
+    <string name="step_progress_desc">Progresso da meta: %1$d de %2$d passos.</string>
+    <string name="menu_expanded_desc">Recolher menu</string>
+    <string name="menu_collapsed_desc">Expandir menu</string>
+    <!-- Notification strings -->
+    <string name="notification_channel_name">Serviço de rastreamento de passos</string>
+    <string name="notification_channel_desc">Rastreia os passos ativamente em segundo plano</string>
+    <string name="notification_title">%d passos</string>
+    <string name="notification_body">&#x1F525; %.2f kcal   &#x23F1;&#xFE0F; %d min   &#x1F6A9; %.1f km</string>
+
+    <string name="goal_reached_title">Meta Alcançada! &#x1F3C6;</string>
+    <string name="goal_reached_body">Você acabou de ultrapassar %d passos hoje!</string>
+
+    <string name="app_name">StepsLog</string>
+    <string name="user_steps">Passos de hoje</string>
+    <string name="enter_measurements">Inserir medidas</string>
+    <string name="save_button">Salvar</string>
+    <string name="cancel_button">Cancelar</string>
+    <string name="user_meters">Metros</string>
+    <string name="user_minutes">Minutos</string>
+    <string name="start_tracking">Iniciar rastreamento</string>
+    <string name="update_user_data">Atualizar dados do usuário</string>
+    <string name="user_height">Altura (cm)</string>
+    <string name="user_weight">Peso (kg)</string>
+    <string name="user_gender">Gênero (Homem ou Mulher)</string>
+    <string name="user_steps_goal">Meta diária de passos</string>
+    <string name="language_selection">Idioma</string>
+    <string name="select_language_title">Selecionar idioma</string>
+    <!-- Form strings -->
+    <string name="height_placeholder">ex. 173</string>
+    <string name="weight_placeholder">ex. 80.5</string>
+    <string name="height_error">Insira uma altura válida (50–250)</string>
+    <string name="weight_error">Insira um peso válido (20.00–300.00 kg)</string>
+    <string name="age_error">Insira uma idade válida (8–120)</string>
+    <string name="gender_error">Selecione um gênero válido (Homem ou Mulher)</string>
+    <string name="daily_steps_goal_error">Insira uma meta diária válida (500–100000)</string>
+</resources>

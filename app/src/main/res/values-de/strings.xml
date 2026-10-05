@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Screen nav tabs strings-->
+    <string name="tab_today">Heute</string>
+    <string name="tab_history">Verlauf</string>
+    <!--Main screen strings-->
+    <string name="calories_format">Kcal: %.2f</string>
+    <string name="distance_meters_format">Meter: %.2f</string>
+    <string name="distance_km_format">KM: %.2f</string>
+    <string name="distance_km_floor_format">KM: %.0f</string>
+    <string name="out_of_goal_steps">/%d Schritte</string>
+    <string name="export_step_records">Schrittdaten exportieren</string>
+    <string name="import_step_records">Schrittdaten importieren</string>
+    <string name="more_options_content_desc">Weitere Optionen</string>
+    <string name="overwrite_data_title">Vorhandene Daten überschreiben?</string>
+    <string name="overwrite_data_text">Beim Importieren von Schrittdaten wird Ihr aktueller Schrittverlauf gelöscht und ersetzt. Möchten Sie wirklich fortfahren?</string>
+    <string name="import_button_text">Importieren</string>
+
+    <!--History screen strings-->
+    <string name="history_title">Schrittverlauf</string>
+    <string name="history_subtitle">Ihre Aktivität der letzten %d Tage</string>
+    <string name="history_steps_count">%1$s Schritte</string>
+    <string name="history_no_activity">Keine aufgezeichnete Aktivität</string>
+    <string name="step_progress_desc">Schrittziel-Fortschritt: %1$d von %2$d Schritten.</string>
+    <string name="menu_expanded_desc">Menü zuklappen</string>
+    <string name="menu_collapsed_desc">Menü aufklappen</string>
+
+    <!-- Notification strings -->
+    <string name="notification_channel_name">Schrittzähler-Dienst</string>
+    <string name="notification_channel_desc">Verfolgt aktiv Schritte im Hintergrund</string>
+    <string name="notification_title">%d Schritte</string>
+    <string name="notification_body">&#x1F525; %.2f kcal   &#x23F1;&#xFE0F; %d Min.   &#x1F6A9; %.1f km</string>
+
+    <string name="goal_reached_title">Ziel erreicht! &#x1F3C6;</string>
+    <string name="goal_reached_body">Sie haben heute %d Schritte überschritten!</string>
+
+    <string name="app_name">StepsLog</string>
+    <string name="user_steps">Heutige Schritte</string>
+    <string name="enter_measurements">Messwerte eingeben</string>
+    <string name="save_button">Speichern</string>
+    <string name="cancel_button">Abbrechen</string>
+    <string name="user_meters">Meter</string>
+    <string name="user_minutes">Minuten</string>
+    <string name="start_tracking">Aufzeichnung starten</string>
+    <string name="update_user_data">Benutzerdaten aktualisieren</string>
+    <string name="user_height">Größe (cm)</string>
+    <string name="user_weight">Gewicht (kg)</string>
+    <string name="user_gender">Geschlecht (Männlich oder Weiblich)</string>
+    <string name="user_steps_goal">Tägliches Schrittziel</string>
+    <string name="language_selection">Sprache</string>
+    <string name="select_language_title">Sprache auswählen</string>
+    <!-- Form strings -->
+    <string name="height_placeholder">z. B. 173</string>
+    <string name="weight_placeholder">z. B. 80.5</string>
+    <string name="height_error">Bitte geben Sie eine gültige Größe ein (50–250)</string>
+    <string name="weight_error">Bitte geben Sie ein gültiges Gewicht ein (20.00–300.00 kg)</string>
+    <string name="age_error">Bitte geben Sie ein gültiges Alter ein (8–120)</string>
+    <string name="gender_error">Bitte wählen Sie ein gültiges Geschlecht (Männlich oder Weiblich)</string>
+    <string name="daily_steps_goal_error">Bitte geben Sie ein gültiges Ziel ein (500–100000)</string>
+</resources>

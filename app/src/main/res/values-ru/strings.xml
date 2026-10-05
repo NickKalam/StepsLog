@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Screen nav tabs strings-->
+    <string name="tab_today">Сегодня</string>
+    <string name="tab_history">История</string>
+    <!--Main screen strings-->
+    <string name="calories_format">Ккал: %.2f</string>
+    <string name="distance_meters_format">Метры: %.2f</string>
+    <string name="distance_km_format">КМ: %.2f</string>
+    <string name="distance_km_floor_format">КМ: %.0f</string>
+    <string name="out_of_goal_steps">/%d шагов</string>
+    <string name="export_step_records">Экспорт истории</string>
+    <string name="import_step_records">Импорт истории</string>
+    <string name="more_options_content_desc">Дополнительные параметры</string>
+    <string name="overwrite_data_title">Перезаписать существующие данные?</string>
+    <string name="overwrite_data_text">Импорт данных удалит и заменит вашу текущую историю шагов. Вы уверены, что хотите продолжить?</string>
+    <string name="import_button_text">Импорт</string>
+
+    <!--History screen strings-->
+    <string name="history_title">История шагов</string>
+    <string name="history_subtitle">Ваша активность за последние %d дней</string>
+    <string name="history_steps_count">%1$s шагов</string>
+    <string name="history_no_activity">Нет записанной активности</string>
+    <string name="step_progress_desc">Прогресс цели: %1$d из %2$d шагов.</string>
+    <string name="menu_expanded_desc">Свернуть меню</string>
+    <string name="menu_collapsed_desc">Развернуть меню</string>
+    <!-- Notification strings -->
+    <string name="notification_channel_name">Служба отслеживания шагов</string>
+    <string name="notification_channel_desc">Активно отслеживает шаги в фоновом режиме</string>
+    <string name="notification_title">%d шагов</string>
+    <string name="notification_body">&#x1F525; %.2f ккал   &#x23F1;&#xFE0F; %d мин   &#x1F6A9; %.1f км</string>
+
+    <string name="goal_reached_title">Цель достигнута! &#x1F3C6;</string>
+    <string name="goal_reached_body">Вы только что прошли %d шагов сегодня!</string>
+
+    <string name="app_name">StepsLog</string>
+    <string name="user_steps">Шаги за сегодня</string>
+    <string name="enter_measurements">Введите параметры</string>
+    <string name="save_button">Сохранить</string>
+    <string name="cancel_button">Отмена</string>
+    <string name="user_meters">Метры</string>
+    <string name="user_minutes">Минуты</string>
+    <string name="start_tracking">Начать отслеживание</string>
+    <string name="update_user_data">Обновить данные</string>
+    <string name="user_height">Рост (см)</string>
+    <string name="user_weight">Вес (кг)</string>
+    <string name="user_gender">Пол (Мужской или Женский)</string>
+    <string name="user_steps_goal">Ежедневная цель</string>
+    <string name="language_selection">Язык</string>
+    <string name="select_language_title">Выберите язык</string>
+    <!-- Form strings -->
+    <string name="height_placeholder">напр. 173</string>
+    <string name="weight_placeholder">напр. 80.5</string>
+    <string name="height_error">Пожалуйста, введите правильный рост (50–250)</string>
+    <string name="weight_error">Пожалуйста, введите правильный вес (20.00–300.00 кг)</string>
+    <string name="age_error">Пожалуйста, введите правильный возраст (8–120)</string>
+    <string name="gender_error">Пожалуйста, выберите правильный пол (Мужской или Женский)</string>
+    <string name="daily_steps_goal_error">Пожалуйста, введите правильную цель (500–100000)</string>
+</resources>
