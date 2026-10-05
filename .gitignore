@@ -1,20 +1,21 @@
-# IDE / Local
-*.iml
-.gradle/
-.idea/
-local.properties
-.DS_Store
+# IDE / Local 
+*.iml 
+.gradle/ 
+.idea/ 
+.kotlin/
+local.properties 
+.DS_Store 
 
-# Build artifacts
-build/
-app/build/
-app/release/
-/captures
-.externalNativeBuild
-.cxx
+# Build artifacts 
+build/ 
+app/build/ 
+app/release/ 
+/captures 
+.externalNativeBuild 
+.cxx 
 
-# Release & Signing
-*.apk
-*.aab
-*.jks
+# Release & Signing 
+*.apk 
+*.aab 
+*.jks 
 *.keystore
