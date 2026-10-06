@@ -15,7 +15,9 @@ fun calculateActiveCaloriesDelta(cadence:Int,weight:Double,minutes:Double):Doubl
         cadence < 100 -> 0.038 * cadence - 0.796
         cadence < 120 -> 3.0 + (cadence - 100) * 0.05
         else -> 4.0 + (cadence - 120) * 0.10
-    }.coerceAtLeast(1.0)
+    }.coerceAtLeast(1.0).coerceAtMost(6.0)
+
+    val netMet = (grossMet - 1.0).coerceAtLeast(0.5)
     val batchHours=minutes/60.0
-    return grossMet*weight*batchHours
+    return netMet * weight * batchHours
 }

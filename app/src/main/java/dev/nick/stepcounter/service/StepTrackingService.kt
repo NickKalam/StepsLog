@@ -78,7 +78,7 @@ class StepTrackingService : Service() {
             val profile = userPreferencesRepository.userProfileFlow.first()
             val today = LocalDate.now().toEpochDay()
 
-            //When the data changes
+            //When the date changes
             if (profile.lastTrackedDate < today) {
                 //Reset Datastore daily stats data and delete old steps in the database
                 userPreferencesRepository.resetDailyStats()
@@ -114,20 +114,16 @@ class StepTrackingService : Service() {
         sensorManager = getSystemService(SENSOR_SERVICE) as SensorManager
         stepSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER)
 
-        listener = StepsSensorListener(timeProvider) { newSteps,timestamp ->
+        listener = StepsSensorListener(timeProvider) { newSteps,timestamp,activeMinutes ->
             serviceScope.launch {
                 repository.saveSteps(newSteps,timestamp)
 
                 val profile = currentProfile ?: userPreferencesRepository.userProfileFlow.first()
 
-                val safeCadence = maxOf(1, profile.cadence) // Prevent divide by zero
-                val batchMinutes = newSteps.toDouble() / safeCadence
-
-
-                val deltaKcal = calculateActiveCaloriesDelta(profile.cadence,profile.weight,batchMinutes)
+                val deltaKcal = calculateActiveCaloriesDelta(profile.cadence, profile.weight, activeMinutes)
 
                 pendingCalorieDelta += deltaKcal
-                pendingMinutesDelta+=batchMinutes
+                pendingMinutesDelta += activeMinutes
 
                 val currentTime = timeProvider.currentTimeMillis()
                 if (currentTime - lastDataStoreWriteTime >= DATASTORE_WRITE_INTERVAL_MS) {
