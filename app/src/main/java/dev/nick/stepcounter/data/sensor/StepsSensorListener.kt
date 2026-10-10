@@ -53,8 +53,15 @@ class StepsSensorListener(
             }
             val newSteps = totalSteps - lastReportedSteps
             lastReportedSteps = totalSteps
-            val timeElapsedMs = currentTimestamp - previousTimestamp
+
+            val rawTimeElapsedMs = currentTimestamp - previousTimestamp
             previousTimestamp = currentTimestamp
+
+            val timeElapsedMs = if (newSteps > (rawTimeElapsedMs / 1000.0) * 4.0) {
+                ((newSteps.toDouble() / ASSUMED_WALKING_CADENCE) * ONE_MINUTE_MS).toLong()
+            } else {
+                rawTimeElapsedMs
+            }
 
             if (newSteps > 0) {
                 val minutesPassed = (timeElapsedMs / ONE_MINUTE_MS).toInt()
