@@ -15,7 +15,6 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
-import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.receiveAsFlow
@@ -43,8 +42,6 @@ class StepCounterViewModel @Inject constructor(
     private val _uiEvent = Channel<StepCounterEvent>()
     val uiEvent = _uiEvent.receiveAsFlow()
     private val _startOfDay = MutableStateFlow(timeProvider.getMidnightToday())
-    private val _historyDays = MutableStateFlow(30L)
-    val historyDays: StateFlow<Long> = _historyDays.asStateFlow()
 
     fun refreshDateIfNeeded()
     {
@@ -109,7 +106,6 @@ class StepCounterViewModel @Inject constructor(
     @OptIn(ExperimentalCoroutinesApi::class)
     val uiState: StateFlow<StepCounterUiState> = _startOfDay
         .flatMapLatest { start ->
-            // Calculate end of day by adding 24 hours (86,400,000 ms)
             val zone = ZoneId.systemDefault()
 
             val end = Instant.ofEpochMilli(start)
@@ -139,15 +135,11 @@ class StepCounterViewModel @Inject constructor(
             initialValue = StepCounterUiState()
         )
 
-    fun setHistoryDays(days: Long) {
-        _historyDays.value = days
-    }
 
     @OptIn(ExperimentalCoroutinesApi::class)
     val stepHistory: StateFlow<List<DailyStepTotal>> =
-        combine(_startOfDay, _historyDays) { _, days -> days }
-            .flatMapLatest { days ->
-                stepsRepository.getStepHistory(days)
+        _startOfDay.flatMapLatest { _ ->
+                stepsRepository.getStepHistory(365L)
             }
             .stateIn(
                 scope = viewModelScope,
@@ -156,8 +148,6 @@ class StepCounterViewModel @Inject constructor(
             )
 
     //Import/Export steps data
-
-
     fun exportDataToCsv(uri: Uri) {
         viewModelScope.launch {
             stepRecordsTransferUseCase.exportDataToCsv(uri)
